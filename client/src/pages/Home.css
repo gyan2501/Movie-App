@@ -1,0 +1,49 @@
+.home-container {
+  padding: 2rem;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.movie-item {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+  padding: 1rem;
+}
+
+.skeleton {
+  height: 250px;
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.skeleton-title {
+  height: 16px;
+  width: 80%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.skeleton-year {
+  height: 16px;
+  width: 20%;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
