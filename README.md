@@ -13,7 +13,7 @@ The Movie Application is a web application that allows users to search for movie
 ### 3. Dark and Light Mode: 
 - The application supports both dark and light modes. Users can toggle between these modes using the interface.
 ## Technology Stack
-- Frontend: React.js + Chakra-Ui
+- Frontend: React.js + Vanilla CSS
 - Backend: Node.js (Express.js)
 - Database: MongoDB
 - API Integration: OMDB API for movie data
