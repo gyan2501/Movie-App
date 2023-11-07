@@ -31,7 +31,7 @@ function MovieDetails({ el }) {
 
     fetchMovieDetails();
   }, []);
-  console.log("details movie", singleMovie);
+  // console.log("details movie", singleMovie);
   return (
     <Box>
       <Navbar />
