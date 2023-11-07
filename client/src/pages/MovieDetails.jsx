@@ -20,9 +20,9 @@ function MovieDetails({ el }) {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/movies/${id}`);
+        const response = await axios.get(`https://blush-lemur-boot.cyclic.app/movies/${id}`);
         setSingleMovie(response.data.movie);
-        console.log("details", response.data.movie);
+        // console.log("details", response.data.movie);
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching movie details:", error);

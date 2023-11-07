@@ -10,7 +10,7 @@ const Home = () => {
 
   const getSearchMovies = (searchQuery) => {
     axios
-      .get(`http://localhost:8080/movies/search`, {
+      .get(`https://blush-lemur-boot.cyclic.app/movies/search`, {
         params: { query: searchQuery },
       })
       .then((res) => {
