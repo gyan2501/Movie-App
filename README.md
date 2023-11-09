@@ -10,8 +10,6 @@ The Movie Application is a web application that allows users to search for movie
 ### 2. View Movie Details: 
 - Users can click on a movie from the search results to access its detailed information. This includes the movie's title, year of release, actors, writers, plot, and IMDb rating.
 
-### 3. Dark and Light Mode: 
-- The application supports both dark and light modes. Users can toggle between these modes using the interface.
 ## Technology Stack
 - Frontend: React.js + Vanilla CSS
 - Backend: Node.js (Express.js)
