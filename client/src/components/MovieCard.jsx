@@ -1,22 +1,30 @@
+
+
+import { Box, Flex, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./MovieCard.css"; // Import your CSS file
 
 const MovieCard = ({ el }) => {
-  console.log("el", el);
+  console.log("el",el);
   return (
-    <div className="movie-card">
+    <Box boxShadow="2xl" rounded="md" >
       <Link to={`/${el.imdbID}`} style={{ textDecoration: "none" }}>
-        <img src={el.Poster} alt={el.Title} />
-
-        <div className="movie-details">
-          <div className="title-year">
-            <h6 className="title">Title: {el.Title}</h6>
-            <h6 className="year">Year: {el.Year}</h6>
-          </div>
-        </div>
+        <Image src={el.Poster} alt={"image link is broken"}  height={"80%"} objectFit={"fill"} transition={"transform 0.3s ease-in-out"}  _hover={{transform: "scale(1.1)" ,borderRadius:"15px"}}/>
       </Link>
-    </div>
+      <Flex m={5} mb={3} justifyContent={"space-between"}>
+        <Box alignContent={"center"}>
+          <Heading as="h6" size="xs" mb={"5"}>
+            Title: {el.Title}
+          </Heading>
+          <Heading as="h6" size="xs">
+            Year: {el.Year}
+          </Heading>
+        </Box>
+        <Box>
+          
+        </Box>
+      </Flex>
+    </Box>
   );
 };
 
